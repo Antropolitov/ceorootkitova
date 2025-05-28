@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rootkitov | Python Developer & Security Researcher</title>
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --bg-darker: #0a0a0a;
+            --primary: #6a0dad;
+            --primary-light: #9b59b6;
+            --text: #e0e0e0;
+            --text-light: #ffffff;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--bg-darker) 0%, var(--primary) 100%);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        h1 {
+            color: var(--text-light);
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.3em;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        section {
+            padding: 50px 0;
+            border-bottom: 1px solid #333;
+        }
+        
+        h2 {
+            color: var(--primary-light);
+            font-size: 2em;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .skill-card {
+            background: var(--bg-darker);
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 3px solid var(--primary);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(106, 13, 173, 0.2);
+        }
+        
+        .skill-card h3 {
+            margin-top: 0;
+            color: var(--primary-light);
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background: var(--bg-darker);
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        
+        .project-content {
+            padding: 20px;
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--text-light);
+        }
+        
+        .project-card p {
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            color: var(--primary-light);
+            font-weight: bold;
+        }
+        
+        .contact {
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        .telegram-btn {
+            display: inline-block;
+            background: #0088cc;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .telegram-btn:hover {
+            background: #006699;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 136, 204, 0.4);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background: var(--bg-darker);
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .skills-grid, .projects {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>rootkitov</h1>
+            <p class="tagline">Профессиональный разработчик на Python | Специалист по OSINT и Pentest | Создатель инструментов для кибербезопасности</p>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <p>Я профессиональный разработчик на Python с глубокими знаниями в области информационной безопасности. Специализируюсь на открытой разведке (OSINT) и тестировании на проникновение (Pentest), создаю мощные инструменты для анализа метаданных и поиска уязвимостей.</p>
+            
+            <p>Мои проекты помогают специалистам по безопасности эффективно собирать информацию, анализировать данные и выявлять потенциальные угрозы. Я постоянно совершенствую свои навыки и изучаю новые технологии в области кибербезопасности.</p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="container">
+            <h2>Навыки и экспертиза</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Разработка на Python</h3>
+                    <p>Продвинутое программирование на Python с акцентом на инструменты для кибербезопасности. Создание скриптов для автоматизации задач, анализа данных и работы с сетью.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>OSINT исследования</h3>
+                    <p>Профессиональный сбор и анализ открытых данных. Разработка специализированных поисковых систем и инструментов для мета-анализа информации из различных источников.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Тестирование на проникновение</h3>
+                    <p>Выявление и эксплуатация уязвимостей в веб-приложениях и сетевой инфраструктуре. Разработка кастомных инструментов для пентеста.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Криптография</h3>
+                    <p>Разработка инструментов для шифрования и защиты данных. Глубокое понимание современных криптографических алгоритмов и их реализаций.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Веб-разработка</h3>
+                    <p>Создание интерактивных веб-интерфейсов для инструментов безопасности. Работа с HTML, CSS, JavaScript и современными фреймворками.</p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>Анализ уязвимостей</h3>
+                    <p>Разработка сканеров уязвимостей и систем мониторинга угроз. Анализ кода на наличие потенциальных уязвимостей и backdoor'ов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Мои проекты</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>@obfconsole_bot</h3>
+                        <p>Телеграм-бот для <span class="highlight">шифрования Python кода</span> и защиты интеллектуальной собственности. Реализует различные алгоритмы обфускации и шифрования для защиты исходного кода.</p>
+                        <p>Бот поддерживает несколько методов трансформации кода и позволяет настраивать уровень защиты в зависимости от требований.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Мета-поисковые системы</h3>
+                        <p>Специализированные поисковые движки для <span class="highlight">анализа метаданных</span> из различных источников. Позволяют находить скрытые связи и извлекать ценную информацию из публичных данных.</p>
+                        <p>Инструменты поддерживают работу с большими объемами данных и предоставляют удобные интерфейсы для анализа.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Сканеры уязвимостей</h3>
+                        <p>Кастомные решения для <span class="highlight">автоматического поиска уязвимостей</span> в веб-приложениях и сетевых сервисах. Включают как универсальные сканеры, так и узкоспециализированные инструменты.</p>
+                        <p>Поддерживается обнаружение широкого спектра уязвимостей, от классических SQLi/XSS до сложных логических ошибок.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь со мной</h2>
+            <p>Если вы заинтересованы в сотрудничестве или у вас есть вопросы по моим проектам, напишите мне в Telegram:</p>
+            <a href="https://t.me/rootkitov" class="telegram-btn">Написать в Telegram @rootkitov</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 rootkitov. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
